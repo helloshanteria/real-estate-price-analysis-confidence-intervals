@@ -36,26 +36,6 @@ Confidence intervals were calculated to estimate the true mean price of similar 
 
 These intervals show the range where the true population mean is likely to fall, with varying levels of certainty.
 
-Formula Used
-
-x
-ˉ
-±z(
-n
-	
-s	​
-
-)
-
-Where:
-
-x
-ˉ
- = sample mean
-z = z-score based on confidence level
-s = standard deviation
-n = sample size
-
 Tools & Technologies
 R (Statistical Analysis)
 Excel (Data organization)
