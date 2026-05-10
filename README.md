@@ -1,70 +1,41 @@
-Analyzing Confidence Intervals Using Zillow Real Estate Data
+# Real Estate Market Analysis Using R
 
-Overview
+## Overview
 
-This project applies statistical analysis techniques to real-world housing data from Zillow to estimate property values using confidence intervals.
+This project analyzes Zillow real estate data using R to identify housing price trends and estimate average sale prices for townhomes in Gwinnett County, Georgia.
 
-The goal was to use sample data to make data-driven inferences about the broader housing market, specifically focusing on townhome prices in Gwinnett County, Georgia.
+## Objective
 
-Objective
-Analyze real estate pricing using a sample dataset
-Calculate and interpret confidence intervals
-Understand variability and uncertainty in housing prices
-Apply statistical concepts to a real-world business scenario
+The goal of this project was to analyze housing market data and apply statistical analysis techniques to estimate average sale prices and interpret real-world pricing trends.
 
-Dataset
-Source: Zillow housing listings
-Location: Gwinnett County, GA
-Property Type: Townhomes
+## Dataset
 
-Criteria:
-4 bedrooms
-3+ bathrooms
+The dataset consisted of 25 randomly selected Zillow listings for 4-bedroom townhomes with at least 3 bathrooms located in Gwinnett County, Georgia.
 
-Key Statistics
-Sample Size (n): 25 properties
-Mean Price: $541,428
-Standard Deviation: $166,770
+## Tools Used
 
-Confidence Intervals
-Confidence intervals were calculated to estimate the true mean price of similar townhomes in the area.
+* R
+* RStudio
 
-80% Confidence Interval
-90% Confidence Interval
-95% Confidence Interval
-99% Confidence Interval
+## Analysis Performed
 
-These intervals show the range where the true population mean is likely to fall, with varying levels of certainty.
+* Applied the Central Limit Theorem
+* Calculated descriptive statistics
+* Computed a 90% confidence interval
+* Analyzed housing price distributions
+* Created statistical visualizations using R
 
-Tools & Technologies
-R (Statistical Analysis)
-Excel (Data organization)
-Data visualization techniques
+## Key Findings
 
-Key Insights
-Housing prices showed high variability, indicating a wide range of property values
-Wider confidence intervals (99%) provide more certainty but less precision
-Narrower intervals (80%) are more precise but less reliable
-This type of analysis can support real estate pricing strategies and investment decisions
+* Estimated the average townhome sale price to fall between approximately $486K–$596K
+* Identified pricing trends within the selected housing sample
+* Strengthened statistical analysis and R programming skills through real-world data analysis
 
- 
-Business Relevance
-This project demonstrates how statistical analysis can be used in:
+## Skills Demonstrated
 
-Real estate market analysis
-Pricing strategy
-Investment decision-making
-Risk assessment
-
-What I Learned
-How to apply confidence intervals to real-world data
-Interpreting statistical results in a business context
-Working with real datasets instead of theoretical examples
-Communicating data insights clearly
-
- 
-Future Improvements
-Increase sample size for more accurate estimates
-Compare multiple counties or property types
-Incorporate regression analysis for deeper insights
-Automate data collection using APIs
+* Statistical Data Analysis
+* R Programming
+* Data Visualization
+* Confidence Intervals
+* Problem Solving
+* Real Estate Data Analysis
