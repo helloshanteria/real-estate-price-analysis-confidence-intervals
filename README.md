@@ -41,5 +41,4 @@ The dataset consisted of 25 randomly selected Zillow listings for 4-bedroom town
 * Real Estate Data Analysis
 
 ## Full Report
-[View Full Project Report](results/real_estate_market_analysis_report.pdf)
 
