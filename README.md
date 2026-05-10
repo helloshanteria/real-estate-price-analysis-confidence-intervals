@@ -31,6 +31,10 @@ The dataset consisted of 25 randomly selected Zillow listings for 4-bedroom town
 * Identified pricing trends within the selected housing sample
 * Strengthened statistical analysis and R programming skills through real-world data analysis
 
+## Visualization
+
+![90% Confidence Interval for Mean Home Price](visuals/Rplot01.png)
+
 ## Skills Demonstrated
 
 * Statistical Data Analysis
