@@ -70,26 +70,44 @@ std_error <- sd(prices) / sqrt(length(prices))
 
 # Confidence interval (90%)
 z_star <- qnorm(0.95)
+
 lower_bound <- mean_price - z_star * std_error
 upper_bound <- mean_price + z_star * std_error
 
 # Create x-values for normal curve
-x_vals <- seq(mean_price - 4*std_error, mean_price + 4*std_error, length.out = 1000)
-y_vals <- dnorm(x_vals, mean = mean_price, sd = std_error)
+x_vals <- seq(mean_price - 4*std_error,
+              mean_price + 4*std_error,
+              length.out = 1000)
 
-# Plot the normal curve
-plot(x_vals, y_vals, type = "l", lwd = 2, col = "black",
+# Create y-values
+y_vals <- dnorm(x_vals,
+                mean = mean_price,
+                sd = std_error)
+
+# Plot the curve
+plot(x_vals, y_vals,
+     type = "l",
+     lwd = 2,
+     col = "black",
      main = "90% Confidence Interval for Mean Home Price",
-     xlab = "Home Sale Price", ylab = "Density")
+     xlab = "Home Sale Price",
+     ylab = "Density")
 
-# Add shaded area for 90% CI
-x_shade <- seq(lower_bound, upper_bound, length.out = 100)
-y_shade <- dnorm(x_shade, mean = mean_price, sd = std_error)
+# Create shaded area
+x_shade <- seq(lower_bound,
+               upper_bound,
+               length.out = 100)
+
+y_shade <- dnorm(x_shade,
+                 mean = mean_price,
+                 sd = std_error)
+
 polygon(c(lower_bound, x_shade, upper_bound),
         c(0, y_shade, 0),
-        col = rgb(0, 0, 1, 0.2), border = NA)
+        col = rgb(0, 0, 1, 0.2),
+        border = NA)
 
-# Add vertical lines for the bounds
-abline(v = c(lower_bound, upper_bound), col = "blue", lty = 2)
-
-
+# Add confidence interval lines
+abline(v = c(lower_bound, upper_bound),
+       col = "blue",
+       lty = 2)
